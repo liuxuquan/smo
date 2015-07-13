@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layouts defaultdir="/WEB-INF/ftl-layouts/">
+	<excludes>
+		<pattern>/static/*</pattern>
+		<pattern>/api/*</pattern>
+		<pattern>/api/**/</pattern>
+		<pattern>/**/*.ajax</pattern>
+	</excludes>
+	
+	<errorPages page="layout/blank.vm">
+        <pattern>error/404.vm</pattern>
+        <pattern>error/500.vm</pattern>
+        <pattern>error/*</pattern>
+    </errorPages> 
+	
+    <layout page="layout/blank.vm" default="true">
+        <pattern>/ufo/**/*</pattern>
+    </layout>
+</layouts>

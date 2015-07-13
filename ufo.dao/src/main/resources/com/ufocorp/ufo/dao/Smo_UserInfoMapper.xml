@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ufocorp.ufo.dao.Smo_UserInfoMapper">
+
+	<sql id="Base_Columns">smo_user_id, smo_user_name, smo_user_phone, smo_user_identify, smo_user_imageurl, smo_user_age, smo_user_sex, smo_user_valid, smo_user_email, smo_user_pwd, date_format(smo_user_regiesttime,'%Y-%m-%d %H:%i:%s') smo_user_regiesttime, smo_user_logintype</sql>
+	
+	<select id="get" resultType="Smo_userinfo">
+		select 
+			<include refid="Base_Columns"/>from smo_user_info where smo_user_phone= #{smo_user_phone,jdbcType=VARCHAR}</select>
+	
+	<insert id="add" parameterType="Smo_userinfo">insert into smo_user_info values(
+#{smo_user_id,jdbcType=VARCHAR},
+#{smo_user_name,jdbcType=VARCHAR},
+#{smo_user_phone,jdbcType=VARCHAR},
+#{smo_user_identify,jdbcType=VARCHAR},
+#{smo_user_imageurl,jdbcType=VARCHAR},
+#{smo_user_age,jdbcType=INT},
+#{smo_user_sex, jdbcType=BOOLEAN},
+#{smo_user_valid, jdbcType=BOOLEAN},
+#{smo_user_email, jdbcType=VARCHAR},
+#{smo_user_pwd, jdbcType=VARCHAR},
+now(),
+#{smo_user_logintype, jdbcType=INT},
+)</insert>
+	
+	<update id="update" parameterType="Smo_userinfo">update smo_user_info set<if test="smo_user_name != null">
+				smo_user_name = #{smo_user_name,jdbcType=VARCHAR},
+			</if> 
+			<if test="smo_user_identify != null">
+				smo_user_identify = #{smo_user_identify,jdbcType=VARCHAR},
+			</if>
+			<if test="smo_user_imageurl != null">
+				smo_user_imageurl = #{smo_user_imageurl,jdbcType=VARCHAR},
+			</if>
+			<if test="smo_user_imageurl != null">
+				smo_user_age = #{smo_user_age,jdbcType=INT},
+			</if>
+			<if test="smo_user_imageurl != null">
+				smo_user_sex = #{smo_user_sex,jdbcType=BOOLEAN},
+			</if>
+			<if test="smo_user_imageurl != null">
+				smo_user_valid = #{smo_user_valid,jdbcType=INT},
+			</if>
+			<if test="smo_user_imageurl != null">
+				smo_user_email = #{smo_user_email,jdbcType=VARCHAR},
+			</if>
+			<if test="smo_user_imageurl != null">
+				smo_user_pwd = #{smo_user_pwd,jdbcType=VARCHAR},
+			</if>
+			<if test="smo_user_imageurl != null">
+				smo_user_logintype = #{smo_user_logintype,jdbcType=INT},
+			</if>
+		where 
+			smo_user_phone = #{smo_user_phone,jdbcType=VARCHAR}
+	</update>
+	
+	<delete id="delete">delete from smo_user_info where smo_user_phone = #{smo_user_phone,jdbcType=VARCHAR}</delete>
+	
+  	<select id="getList" parameterType="Smo_userinfo" resultType="Smo_userinfo">
+		select 
+			<include refid="Base_Columns"/>from smo_user_info
+		where 1 = 1<if test="smo_user_phone != null">
+				and smo_user_phone = #{smo_user_phone,jdbcType=VARCHAR} 
+			</if>
+			<if test="smo_user_id != null">
+				and smo_user_id = #{smo_user_id,jdbcType=VARCHAR}
+			</if>
+			<if test="smo_user_identify != null">
+				and smo_user_identify = #{smo_user_identify,jdbcType=VARCHAR}
+			</if>
+			<if test="smo_user_email != null">
+				and smo_user_email = #{smo_user_email,jdbcType=VARCHAR}
+			</if>
+	</select>
+</mapper>

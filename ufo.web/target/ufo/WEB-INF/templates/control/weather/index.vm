@@ -1,0 +1,4 @@
+查询天气列表：
+#foreach($vo in $result)
+	城市：${vo.city}  &nbsp;&nbsp; 温度：${vo.temperature} <br/>
+#end

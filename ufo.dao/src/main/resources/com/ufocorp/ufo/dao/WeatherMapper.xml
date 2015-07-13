@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ufocorp.ufo.dao.WeatherMapper">
+
+	<sql id="Base_Columns">
+		id, city, date, temperature, date_format(updatetime,'%Y-%m-%d %H:%i:%s') updatetime
+	</sql>
+	
+	<select id="get" resultType="Weather">
+		select 
+			<include refid="Base_Columns"/>
+		from weather 
+		where 
+			city = #{city,jdbcType=VARCHAR}
+			and date = #{date,jdbcType=VARCHAR}
+	</select>
+	
+	<insert id="add" parameterType="Weather">
+		insert into weather values(
+			#{id,jdbcType=VARCHAR},
+			#{city,jdbcType=VARCHAR},
+			#{date,jdbcType=VARCHAR},
+			#{temperature,jdbcType=VARCHAR},
+			now()
+		)
+	</insert>
+	
+	<update id="update" parameterType="Weather">
+		update weather set
+			<if test="temperature != null">
+				temperature = #{temperature,jdbcType=VARCHAR},
+			</if> 
+			<if test="city != null">
+				city = #{city,jdbcType=VARCHAR},
+			</if>
+			<if test="date != null">
+				date = #{date,jdbcType=VARCHAR},
+			</if>
+			updatetime = now()
+		where 
+			id = #{id,jdbcType=VARCHAR}
+	</update>
+	
+	<delete id="delete">
+		delete from weather where id = #{id,jdbcType=VARCHAR}
+	</delete>
+	
+  	<select id="getList" parameterType="Weather" resultType="Weather">
+		select 
+			<include refid="Base_Columns"/>
+		from weather 
+		where 1 = 1
+			<if test="city != null">
+				and city = #{city,jdbcType=VARCHAR} 
+			</if>
+			<if test="date != null">
+				and date = #{date,jdbcType=VARCHAR}
+			</if>
+			
+	</select>
+</mapper>

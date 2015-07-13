@@ -1,0 +1,302 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.ufocorp.ufo:ufo-web:war:1.0.0-SNAPSHOT
+[WARNING] 'version' contains an expression but should be a constant. @ com.ufocorp.ufo:ufo-web:${ufo.version}, E:\Eclipse\WorkSpace\ufo\ufo.web\pom.xml, line 15, column 11
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.ufocorp.ufo:ufo-web:${ufo.version}, E:\Eclipse\WorkSpace\ufo\ufo.web\pom.xml, line 142, column 12
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.ufocorp.ufo:ufo-biz:jar:1.0.0-SNAPSHOT
+[WARNING] 'version' contains an expression but should be a constant. @ com.ufocorp.ufo:ufo-biz:${ufo.version}, E:\Eclipse\WorkSpace\ufo\ufo.biz\pom.xml, line 13, column 11
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.ufocorp.ufo:ufo-biz:${ufo.version}, E:\Eclipse\WorkSpace\ufo\ufo.biz\pom.xml, line 67, column 12
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.ufocorp.ufo:ufo-dao:jar:1.0.0-SNAPSHOT
+[WARNING] 'version' contains an expression but should be a constant. @ com.ufocorp.ufo:ufo-dao:${ufo.version}, E:\Eclipse\WorkSpace\ufo\ufo.dao\pom.xml, line 14, column 11
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.ufocorp.ufo:ufo-remote:jar:1.0.0-SNAPSHOT
+[WARNING] 'version' contains an expression but should be a constant. @ com.ufocorp.ufo:ufo-remote:${ufo.version}, E:\Eclipse\WorkSpace\ufo\ufo.remote\pom.xml, line 15, column 11
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.ufocorp.ufo:ufo-remote:${ufo.version}, E:\Eclipse\WorkSpace\ufo\ufo.remote\pom.xml, line 54, column 12
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.ufocorp.ufo:ufo-service:jar:1.0.0-SNAPSHOT
+[WARNING] 'version' contains an expression but should be a constant. @ com.ufocorp.ufo:ufo-service:${ufo.version}, E:\Eclipse\WorkSpace\ufo\ufo.service\pom.xml, line 16, column 11
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.ufocorp.ufo:ufo-model:jar:1.0.0-SNAPSHOT
+[WARNING] 'version' contains an expression but should be a constant. @ com.ufocorp.ufo:ufo-model:${ufo.version}, E:\Eclipse\WorkSpace\ufo\ufo.model\pom.xml, line 15, column 11
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.ufocorp.ufo:ufo-model:${ufo.version}, E:\Eclipse\WorkSpace\ufo\ufo.model\pom.xml, line 28, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.ufocorp.ufo:ufo-common:jar:1.0.0-SNAPSHOT
+[WARNING] 'version' contains an expression but should be a constant. @ com.ufocorp.ufo:ufo-common:${ufo.version}, E:\Eclipse\WorkSpace\ufo\ufo.common\pom.xml, line 15, column 11
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] ufo-parent
+[INFO] ufo-common
+[INFO] ufo-model
+[INFO] ufo-dao
+[INFO] ufo-remote
+[INFO] ufo-service
+[INFO] ufo-biz
+[INFO] ufo-web
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ufo-parent 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ufo-common 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ufo-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ ufo-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ufo-common ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ ufo-common ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ ufo-common ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ufo-common ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ufo-model 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ufo-model ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Eclipse\WorkSpace\ufo\ufo.model\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ ufo-model ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ufo-model ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ ufo-model ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ ufo-model ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ufo-model ---
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:jar (attach-sources) > generate-sources @ ufo-model >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:jar (attach-sources) < generate-sources @ ufo-model <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar (attach-sources) @ ufo-model ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ufo-dao 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ufo-dao ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ ufo-dao ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ufo-dao ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ ufo-dao ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ ufo-dao ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ufo-dao ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ufo-remote 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ufo-remote ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ ufo-remote ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ufo-remote ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ ufo-remote ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ ufo-remote ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ufo-remote ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ufo-service 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ufo-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Eclipse\WorkSpace\ufo\ufo.service\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ ufo-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ufo-service ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ ufo-service ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ ufo-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ufo-service ---
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:jar (attach-sources) > generate-sources @ ufo-service >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:jar (attach-sources) < generate-sources @ ufo-service <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar (attach-sources) @ ufo-service ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ufo-biz 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ufo-biz ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ ufo-biz ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ufo-biz ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ ufo-biz ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ ufo-biz ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ufo-biz ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ufo-web 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ufo-web ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ ufo-web ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ufo-web ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ ufo-web ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ ufo-web ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ ufo-web ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [ufo-web] in [E:\Eclipse\WorkSpace\ufo\ufo.web\target\ufo]
+[INFO] Processing war project
+[INFO] Copying webapp resources [E:\Eclipse\WorkSpace\ufo\ufo.web\src\main\webapp]
+[INFO] Webapp assembled in [263 msecs]
+[INFO] Building war: E:\Eclipse\WorkSpace\ufo\ufo.web\target\ufo.war
+[INFO] WEB-INF\web.xml already added, skipping
+[INFO] 
+[INFO] --- autoconfig-maven-plugin:1.2:autoconfig (default) @ ufo-web ---
+[INFO] -------------------------------------------------
+[INFO] Detected system charset encoding: GBK
+[INFO] If your can't read the following text, specify correct one like this: 
+[INFO] 
+[INFO]   mvn -Dautoconfig.charset=yourcharset
+[INFO] 
+[INFO] Configuring E:\Eclipse\WorkSpace\ufo\ufo.web\target\ufo.war, interactiveMode=auto, strict=true
+[INFO] -------------------------------------------------
+Loading file:/C:/Users/mtk70951/antx.properties
+User-defined properties: file:/C:/Users/mtk70951/antx.properties
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] ufo-parent ......................................... SUCCESS [  0.003 s]
+[INFO] ufo-common ......................................... SUCCESS [  1.331 s]
+[INFO] ufo-model .......................................... SUCCESS [  0.229 s]
+[INFO] ufo-dao ............................................ SUCCESS [  0.110 s]
+[INFO] ufo-remote ......................................... SUCCESS [  0.036 s]
+[INFO] ufo-service ........................................ SUCCESS [  0.050 s]
+[INFO] ufo-biz ............................................ SUCCESS [  0.074 s]
+[INFO] ufo-web ............................................ FAILURE [  5.946 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.946 s
+[INFO] Finished at: 2015-07-12T23:56:05+08:00
+[INFO] Final Memory: 15M/309M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.alibaba.citrus.tool:autoconfig-maven-plugin:1.2:autoconfig (default) on project ufo-web: Autoconfig failed: duplicate entry: META-INF/maven/com.ufocorp.ufo/ufo-common/pom.xml -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal com.alibaba.citrus.tool:autoconfig-maven-plugin:1.2:autoconfig (default) on project ufo-web: Autoconfig failed
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:216)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoExecutionException: Autoconfig failed
+	at com.alibaba.maven.plugin.autoconfig.AutoconfigMojo.execute(AutoconfigMojo.java:176)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	... 20 more
+Caused by: com.alibaba.antx.config.ConfigException: duplicate entry: META-INF/maven/com.ufocorp.ufo/ufo-common/pom.xml
+	at com.alibaba.antx.config.entry.ZipConfigEntry.generate(ZipConfigEntry.java:148)
+	at com.alibaba.antx.config.entry.ZipConfigEntry.processZipEntry(ZipConfigEntry.java:228)
+	at com.alibaba.antx.config.entry.ZipConfigEntry.generate(ZipConfigEntry.java:138)
+	at com.alibaba.antx.config.entry.ConfigEntry.generate(ConfigEntry.java:173)
+	at com.alibaba.antx.config.ConfigRuntimeImpl.start(ConfigRuntimeImpl.java:332)
+	at com.alibaba.antx.config.ConfigRuntimeImpl.start(ConfigRuntimeImpl.java:303)
+	at com.alibaba.maven.plugin.autoconfig.AutoconfigMojo.execute(AutoconfigMojo.java:171)
+	... 22 more
+Caused by: java.util.zip.ZipException: duplicate entry: META-INF/maven/com.ufocorp.ufo/ufo-common/pom.xml
+	at java.util.zip.ZipOutputStream.putNextEntry(ZipOutputStream.java:233)
+	at com.alibaba.antx.config.entry.ZipConfigEntry.copyFile(ZipConfigEntry.java:286)
+	at com.alibaba.antx.config.entry.ZipConfigEntry.processZipEntry(ZipConfigEntry.java:252)
+	at com.alibaba.antx.config.entry.ZipConfigEntry.generate(ZipConfigEntry.java:138)
+	... 28 more
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :ufo-web
